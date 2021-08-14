@@ -28,7 +28,7 @@ Netlify 連結：https://fakeplushie.netlify.app/
 3) 影片中並沒有串商品分門別類的 API，我有額外串接分類的 API，並且自行撰寫簡易的 custom hook (useCategories) 跟 component (Category)
    來完成在 Products 頁面時可以執行分類的功能，使用者在點選該頁面上的按鈕就可以進行商品分類。
 
-4) 採用與影片中些許不同的檔案管理風格，把頁面拆到 pages 資料夾內管理、把元件拆到 components　資料夾內管理
+4) 採用與影片中些許不同的檔案管理風格，把頁面拆到 pages 資料夾內管理、把元件拆到 components　資料夾內管理。
 　 相反地，影片中的檔案管理風格為只要是 .jsx 的檔案都拆到 components 資料夾內管理，該資料夾內的元件資料夾又會多包一兩層資料夾
    我覺得這樣在專案長大時，會比較不好管理，於是採用了我自己的風格。
 
