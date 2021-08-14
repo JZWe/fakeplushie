@@ -9,8 +9,6 @@ import { preload, sliderData as images } from '../../helpers';
 const Mainpage = () => {
   const classes = useStyle();
 
-  // 如果在 MainPage 重新載入頁面時再執行一次 preload，但重載入頁面後還是很容易跑版，不夠穩定
-  // 不確定是不是因為透過 url 來非同步獲取圖片資源的關係
   useEffect(() => {
     var perfEntries = performance.getEntriesByType('navigation');
     if (perfEntries[0].type === 'reload') {
@@ -20,10 +18,7 @@ const Mainpage = () => {
 
   return (
     <>
-      <Box className={classes.slidesContainer}>
-        <ImageSlider slides={images} />
-      </Box>
-
+      <ImageSlider slides={images} />
       <Grid container spacing={1} className={classes.gridContainer}>
         <Grid
           item
