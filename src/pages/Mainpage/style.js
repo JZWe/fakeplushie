@@ -15,6 +15,7 @@ export default makeStyles((theme) => ({
       textAlign: 'center',
     },
   },
+
   leftBox: {
     color: 'white',
     width: '100%',
@@ -51,3 +52,4 @@ export default makeStyles((theme) => ({
     },
   },
 }));
+
