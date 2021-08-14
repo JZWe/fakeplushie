@@ -2,22 +2,37 @@ import { makeStyles } from '@material-ui/core/styles';
 
 //
 export default makeStyles((theme) => ({
-  img: {
-    maxWidth: '100%',
-    maxHeight: '100%',
-    borderRadius: '10px',
-  },
   slider: {
     position: 'relative',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: '100px',
+    color: 'white',
+  },
+  title: {
+    position: 'absolute',
+    top: '40%',
+    fontWeight: '300',
+    fontSize: '40px',
+    letterSpacing: '3px',
+    [theme.breakpoints.down('sm')]: {
+      top: '43%',
+      marginLeft: '12px',
+      fontSize: '18px',
+    },
+  },
+  paragraph: {
+    position: 'absolute',
+    top: '55%',
+  },
+  whiteButton: {
+    color: 'white',
+    border: '1px solid white',
   },
   'left-arrow': {
     position: 'absolute',
     top: '45%',
-    left: '40px',
+    left: '20px',
     fontSize: '1rem',
     zIndex: '10',
     cursor: 'pointer',
@@ -30,7 +45,7 @@ export default makeStyles((theme) => ({
   'right-arrow': {
     position: 'absolute',
     top: '45%',
-    right: '40px',
+    right: '20px',
     fontSize: '1rem',
     zIndex: '10',
     cursor: 'pointer',
@@ -41,13 +56,32 @@ export default makeStyles((theme) => ({
     transform: 'scale(1.8)',
   },
   slide: {
-    objectFit: 'cover',
-    opacity: '0',
+    width: '100vw',
+    height: '70vh',
+    display: 'none',
     transitionDuration: '2s ease',
+    backgroundSize: 'cover',
+    backgroundAttachment: 'fixed',
+    backgroundRepeat: 'no-repeat',
+    [theme.breakpoints.down('sm')]: {
+      backgroundPosition: '60% 50%',
+    },
+    transition: 'background-image 0.5s linear',
   },
+  colorOverlay: {
+    position: 'absolute',
+    top: '0',
+    left: '0',
+    width: '100%',
+    height: '100%',
+    backgroundColor: 'black',
+    opacity: '0.6',
+    zIndex: '10',
+  },
+
   'slide-active': {
-    opacity: '1',
     transitionDuration: '2s',
+    display: 'block',
     transform: 'scale(1)',
   },
   dot: {
