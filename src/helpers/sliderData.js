@@ -1,7 +1,8 @@
 const sliderData = [
-  'https://patchwiki.biligame.com/images/blhx/5/53/5vzy2k5ba93z65buztibern38z8h7h1.png',
-  'https://patchwiki.biligame.com/images/blhx/3/39/8myc7imfe4i0262tewhd0pvhfb2fh3v.png',
-  'https://patchwiki.biligame.com/images/blhx/7/7c/k6178iyycpq3u5dpfjq9n54aawap5bi.png',
+  'https://patchwiki.biligame.com/images/blhx/0/0f/8wmjloeawizptm9gak75rewlamndw4e.png',
+  'https://patchwiki.biligame.com/images/blhx/a/a6/e7ndi4sgk90jkw6heffgy5oi1j48ejo.png',
+  'https://patchwiki.biligame.com/images/blhx/8/87/ai00y3dhf417yh7c4idqizn6vvmg6ms.png',
 ];
 
 export default sliderData;
+
