@@ -32,6 +32,7 @@ Netlify 連結：https://fakeplushie.netlify.app/
 　 相反地，影片中的檔案管理風格為只要是 .jsx 的檔案都拆到 components 資料夾內管理，該資料夾內的元件資料夾又會多包一兩層資料夾
    我覺得這樣在專案長大時，會比較不好管理，於是採用了我自己的風格。
 
+5) 將直接在表單元件內透過 API 獲取 Countries、Subdivisions 的邏輯改寫成 custom hook 
 
 # 對這個 project 未來的期許
 
